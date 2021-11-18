@@ -22,22 +22,6 @@ The BBB data scraper supports the following features:
 
 This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/tugkan/BBB-scraper/issues).
 
-## Setup & Usage
-
-You can see how this actor works these videos:
-
-### Using Search
-
-[![Apify - BBB Scraper - Using Search](https://img.youtube.com/vi/7rpRBlIE--o/0.jpg)](https://www.youtube.com/watch?v=7rpRBlIE--o)
-
-You can check the output of this example [here](https://api.apify.com/v2/datasets/AVTdGvcS2iOjDgAaV/items?clean=true&format=json).
-
-### Using Start URLs
-
-[![Apify - BBB Scraper - Using Start URLs](https://img.youtube.com/vi/ProePJ_1pwA/0.jpg)](https://www.youtube.com/watch?v=ProePJ_1pwA)
-
-You can check the output of this example [here](https://api.apify.com/v2/datasets/yiZ9wm15WMTdmdH8L/items?clean=true&format=json).
-
 ## Input Parameters
 
 The input of this scraper should be JSON containing the list of pages on BBB that should be visited. Required fields are:
@@ -54,7 +38,9 @@ The input of this scraper should be JSON containing the list of pages on BBB tha
 
 This solution requires the use of **Proxy servers**, either your own proxy servers or you can use [Apify Proxy](https://www.apify.com/docs/proxy).
 
-##### Tip
+## Tip
+
+**Please keep in mind that BBB.org blocks all the requests that are not coming from Canada, US and Mexico. That's why you should select a proper proxy group according to that.**
 
 When you want to have a scrape over a specific listing URL, just copy and paste the link as one of the **startUrl**.
 
