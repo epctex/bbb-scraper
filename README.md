@@ -20,27 +20,7 @@ The BBB data scraper supports the following features:
 
 ## Bugs, fixes, updates and changelog
 
-This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/tugkan/BBB-scraper/issues).
-
-## Setup & Usage
-
-You can see how this actor works in this video:
-
-### Start URLs
-
-Watch how to set up Start URLs for BBB Scraper [here](https://www.youtube.com/watch?v=mGW6AXw2YR4).
-
-[![Apify - BBB Scraper - Start URLs](https://i.imgur.com/aihxBs4.png)](https://www.youtube.com/watch?v=mGW6AXw2YR4)
-
-You can check the output of this video [here](https://api.apify.com/v2/datasets/ogIps9TqSPgQ8JOdm/items?clean=true&format=json).
-
-### Search
-
-Watch how to set up Search for BBB Scraper [here](https://www.youtube.com/watch?v=Sxd91gst2e0).
-
-[![Apify - BBB Scraper - Search](https://i.imgur.com/mVS5tfp.png)](https://www.youtube.com/watch?v=Sxd91gst2e0)
-
-You can check the output of this video [here](https://api.apify.com/v2/datasets/ORAsXxW8cZjiEMREw/items?clean=true&format=json).
+This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/epctex/BBB-scraper/issues).
 
 ## Input Parameters
 
