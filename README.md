@@ -8,15 +8,13 @@ The BBB data scraper supports the following features:
 
 -   Search any keyword - You can search any keyword you would like to have and get the results
 
--   Scrape lists - Scrape any list that you'd like to get from BBB
+-   Scrape companies - Extract any company information with all of its detail.
 
--   Scrape shelf - You can check the shelves and scrape the information of the newest updates.
+-   Scrape categories - Gather businesses for each of the categories.
 
--   Scrape genres - If you want to get most read books on a certain category or anything related the genres, just type the url.
+-   Search for anything - If you want to get filtered data for the search results, just type the URL.
 
--   Scrape book detail - Scrape a very detailed information for each of the book that you'd like to get.
-
--   Scrape reviews of a book - Scrape all of the reviews from a book optionally.
+-   Retrieve reviews - BBB Scraper provides reviews for all the companies.
 
 ## Bugs, fixes, updates and changelog
 
@@ -24,19 +22,25 @@ This scraper is under active development. If you have any feature requests you c
 
 ## Input Parameters
 
-The input of this scraper should be JSON containing the list of pages on BBB that should be visited. Required fields are:
+The input of this scraper should be JSON containing the list of pages on BBB that should be visited. Possible fields are:
 
-| Field                | Type    | Description                                                                                                                                                                                              |
-| -------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| startUrls            | Array   | (optional) List of BBB URLs. You should only provide news list, jobs list or detail URLs                                                                                                                 |
-| includeReviews       | Boolean | (optional) This will add all the reviews that BBB provides inside the book object. Please keep in mind that the time and resources the actor uses will increase proportionally by the number of reviews. |
-| maxItems             | Integer | (optional) You can limit scraped products. This should be useful when you search through the big subcategories.                                                                                          |
-| endPage              | Integer | (optional) Final number of page that you want to scrape. Default is `Infinite`. This is applies to all `search` request and `startUrls` individually.                                                    |
-| search               | String  | (optional) Keyword that you want to search on BBB.                                                                                                                                                       |
-| country              | String  | (optional) Country you want to search                                                                                                                                                                    |
-| location             |         | (optional) Location you want to search                                                                                                                                                                   |
-| proxy                | Object  | Proxy configuration                                                                                                                                                                                      |
-| extendOutputFunction | String  | (optional) Function that takes a JQuery handle ($) as argument and returns object with data                                                                                                              |
+- `search`: (Optional) (String) Keyword that you want to search on BBB.
+
+- `country`: (Optional) (String) Country you want to search.
+
+- `location`: (Optional) (String) Location you want to search.
+
+- `startUrls`: (Optional) (Array) List of BBB URLs. You should only provide news list, jobs list or detail URLs.
+
+- `includeReviews`: (Optional) (Boolean) This will add all the reviews that BBB provides inside the book object. Please keep in mind that the time and resources the actor uses will increase proportionally by the number of reviews.
+
+- `endPage`: (Optional) (Number) Final number of page that you want to scrape. Default is `Infinite`. This is applies to all `search` request and `startUrls` individually.
+
+- `maxItems`: (Optional) (Number) You can limit scraped items. This should be useful when you search through the big lists or search results.
+
+- `proxy`: (Required) (Proxy Object) Proxy configuration.
+
+- `extendOutputFunction`: (Optional) (String) Function that takes a JQuery handle ($) as argument and returns object with data.
 
 This solution requires the use of **Proxy servers**, either your own proxy servers or you can use [Apify Proxy](https://www.apify.com/docs/proxy).
 
